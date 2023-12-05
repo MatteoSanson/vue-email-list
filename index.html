@@ -22,10 +22,11 @@
         </div>
         <main>
             <ul>
-                <li>{{ email }}</li>
-                <li>ciaone</li>
-                <li>ciaone</li>
-                <li>ciaone</li>
+                <li v-for="(email, index) in emails">
+                    <p>
+                        e-mail {{ index+1 }}: {{ email }}
+                    </p>
+                </li>
             </ul>
         </main>
     </div>
