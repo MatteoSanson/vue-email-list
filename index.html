@@ -5,12 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
+    <!-- axios  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- /axios  -->
     <!-- mio css  -->
     <link rel="stylesheet" href="style.css">
     <!-- /mio css  -->
 </head>
 <body>
-    <div id="app"></div>
+    <header>
+        <h1>Vue Email List</h1>
+    </header>
+    <div id="app" class="container">
+        <div class="jumbotron">
+            <h2>Lista di 10 e-mail generate tramite API</h2>
+        </div>
+        <main>
+            <ul>
+                <li>{{ email }}</li>
+                <li>ciaone</li>
+                <li>ciaone</li>
+                <li>ciaone</li>
+            </ul>
+        </main>
+    </div>
     <!-- vuejs -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- /vuejs -->
